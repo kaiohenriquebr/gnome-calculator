@@ -53,7 +53,7 @@ What Calculator is not:
 %install
 %makeinstall_std
 
-%find_lang %{name} --with-gnome --with-help --all-name
+%find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
 %doc COPYING NEWS
