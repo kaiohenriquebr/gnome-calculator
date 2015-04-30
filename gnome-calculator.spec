@@ -1,7 +1,7 @@
 %define url_ver %(echo %{version} | cut -d. -f1,2)
 
 Name:		gnome-calculator
-Version:	3.14.0
+Version:	 3.16.0
 Release:	3
 Summary:	GNOME Desktop calculator
 Group:		Graphical desktop/GNOME
