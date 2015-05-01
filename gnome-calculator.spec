@@ -1,7 +1,7 @@
 %define url_ver %(echo %{version} | cut -d. -f1,2)
 
 Name:		gnome-calculator
-Version:	 3.16.0
+Version:	3.16.0
 Release:	3
 Summary:	GNOME Desktop calculator
 Group:		Graphical desktop/GNOME
@@ -19,6 +19,7 @@ BuildRequires:	bison
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
+BuildRequires:	mpfr-devel
 Provides:	gcalctool = %{version}
 Obsoletes:	gcalctool <= 6.6.2
 
