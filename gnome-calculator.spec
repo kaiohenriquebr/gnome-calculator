@@ -2,7 +2,7 @@
 
 Name:		gnome-calculator
 Version:	3.16.0
-Release:	4
+Release:	5
 Summary:	GNOME Desktop calculator
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
