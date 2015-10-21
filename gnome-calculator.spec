@@ -1,8 +1,9 @@
 %define url_ver %(echo %{version} | cut -d. -f1,2)
+%define _disable_rebuild_configure 1
 
 Name:		gnome-calculator
-Version:	3.16.0
-Release:	5
+Version:	3.18.1
+Release:	1
 Summary:	GNOME Desktop calculator
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
@@ -65,6 +66,7 @@ What Calculator is not:
 %{_datadir}/dbus-1/services/org.gnome.Calculator.SearchProvider.service
 %{_datadir}/gnome-shell/search-providers/%{name}-search-provider.ini
 %{_datadir}/appdata/%{name}.appdata.xml
+%{_libdir}/%{name}
 %doc %{_mandir}/man1/%{name}.1.*
 %doc %{_mandir}/man1/gcalccmd.1*
 /usr/libexec/%{name}-search-provider
