@@ -20,7 +20,7 @@ BuildRequires:	bison
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
-BuildRequires:	mpfr-devel
+BuildRequires:	pkgconfig(mpfr)
 Provides:	gcalctool = %{version}
 Obsoletes:	gcalctool <= 6.6.2
 
