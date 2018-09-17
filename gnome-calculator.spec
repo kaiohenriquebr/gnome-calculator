@@ -24,7 +24,7 @@ BuildRequires:	pkgconfig(mpfr)
 BuildRequires:	libmpc-devel
 BuildRequires:  gmp-devel
 BuildRequires:	meson
-BuildRequires:	vala
+#BuildRequires:	vala
 Provides:	gcalctool = %{version}
 Obsoletes:	gcalctool <= 6.6.2
 
