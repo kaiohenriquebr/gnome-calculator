@@ -2,5 +2,6 @@ removed_sources:
   gnome-calculator-3.14.0.tar.xz: 03787423ac1f5623115fcfda75a01759516b093a
   gnome-calculator-3.16.0.tar.xz: 89f6c9d57d15b05f6878dc0535059b91ee04a1f8
   gnome-calculator-3.18.1.tar.xz: 4123c65c2da5635ac4ffc5d371dab1a59964d5ad
-sources:
   gnome-calculator-3.18.2.tar.xz: 23afe8b2f90ba726bf422a0a165c4f2b59e91663
+sources:
+  gnome-calculator-3.28.2.tar.xz: ee14f7f9d38ddcf7037296a3ef8156e8af6243e9
