@@ -22,6 +22,7 @@ BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	pkgconfig(mpfr)
 BuildRequires:	libmpc-devel
+BuildRequires:  gmp-devel
 BuildRequires:	meson
 BuildRequires:	vala
 Provides:	gcalctool = %{version}
