@@ -2,7 +2,7 @@
 %define _disable_rebuild_configure 1
 
 Name:		gnome-calculator
-Version:	3.18.2
+Version:	3.28.2
 Release:	1
 Summary:	GNOME Desktop calculator
 Group:		Graphical desktop/GNOME
