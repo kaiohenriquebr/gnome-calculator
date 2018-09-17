@@ -21,6 +21,9 @@ BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	pkgconfig(mpfr)
+BuildRequires:	libmpc-devel
+BuildRequires:	meson
+BuildRequires:	vala
 Provides:	gcalctool = %{version}
 Obsoletes:	gcalctool <= 6.6.2
 
@@ -49,11 +52,12 @@ What Calculator is not:
 %apply_patches
 
 %build
-%configure
-%make
+%meson -Ddocs=true
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
+
 
 %find_lang %{name} --with-gnome
 
