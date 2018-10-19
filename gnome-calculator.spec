@@ -2,7 +2,7 @@
 %define _disable_rebuild_configure 1
 
 Name:		gnome-calculator
-Version:	3.28.2
+Version:	3.30.1
 Release:	1
 Summary:	GNOME Desktop calculator
 Group:		Graphical desktop/GNOME
@@ -24,7 +24,7 @@ BuildRequires:	pkgconfig(mpfr)
 BuildRequires:	libmpc-devel
 BuildRequires:  gmp-devel
 BuildRequires:	meson
-#BuildRequires:	vala
+BuildRequires:	vala
 Provides:	gcalctool = %{version}
 Obsoletes:	gcalctool <= 6.6.2
 
