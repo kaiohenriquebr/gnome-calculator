@@ -26,7 +26,7 @@ BuildRequires:  gmp-devel
 BuildRequires:	meson
 BuildRequires:	vala
 BuildRequires:  vala-tools
-BuildRequires:  pkgcinfig(vapigen)
+BuildRequires:  pkgconfig(vapigen)
 Provides:	gcalctool = %{version}
 Obsoletes:	gcalctool <= 6.6.2
 
