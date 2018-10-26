@@ -72,7 +72,7 @@ What Calculator is not:
 %{_datadir}/glib-2.0/schemas/org.gnome.calculator.gschema.xml
 %{_datadir}/dbus-1/services/org.gnome.Calculator.SearchProvider.service
 #{_datadir}/gnome-shell/search-providers/%{name}-search-provider.ini
-%$_datadir}/appdata/%{name}.appdata.xml
+#_datadir}/appdata/%{name}.appdata.xml
 #{_libdir}/%{name}
 %doc %{_mandir}/man1/%{name}.1.*
 %doc %{_mandir}/man1/gcalccmd.1*
