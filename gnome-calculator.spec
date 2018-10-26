@@ -2,7 +2,7 @@
 %define _disable_rebuild_configure 1
 
 Name:		gnome-calculator
-Version:	3.18.2
+Version:	3.30.1
 Release:	1
 Summary:	GNOME Desktop calculator
 Group:		Graphical desktop/GNOME
@@ -20,7 +20,13 @@ BuildRequires:	bison
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
-BuildRequires:	mpfr-devel
+BuildRequires:	pkgconfig(mpfr)
+BuildRequires:	libmpc-devel
+BuildRequires:  gmp-devel
+BuildRequires:	meson
+BuildRequires:	vala
+BuildRequires:  vala-tools
+BuildRequires:  pkgconfig(vapigen)
 Provides:	gcalctool = %{version}
 Obsoletes:	gcalctool <= 6.6.2
 
@@ -49,11 +55,12 @@ What Calculator is not:
 %apply_patches
 
 %build
-%configure
-%make
+%meson -Ddocs=true
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
+
 
 %find_lang %{name} --with-gnome
 
@@ -61,12 +68,13 @@ What Calculator is not:
 %doc COPYING NEWS
 %{_bindir}/gcalccmd
 %{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
+%{_datadir}/applications/org.gnome.Calculator.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.calculator.gschema.xml
 %{_datadir}/dbus-1/services/org.gnome.Calculator.SearchProvider.service
-%{_datadir}/gnome-shell/search-providers/%{name}-search-provider.ini
-%{_datadir}/appdata/%{name}.appdata.xml
-%{_libdir}/%{name}
+%{_datadir}/gnome-shell/search-providers/org.gnome.Calculator-search-provider.ini
+%{_datadir}/metainfo/org.gnome.Calculator.appdata.xml
+%{_datadir}/icons/hicolor/*
+#{_libdir}/%{name}
 %doc %{_mandir}/man1/%{name}.1.*
 %doc %{_mandir}/man1/gcalccmd.1*
 /usr/libexec/%{name}-search-provider
