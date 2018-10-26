@@ -68,11 +68,12 @@ What Calculator is not:
 %doc COPYING NEWS
 %{_bindir}/gcalccmd
 %{_bindir}/%{name}
-#{_datadir}/applications/%{name}.desktop
+%{_datadir}//org.gnome.Calculator.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.calculator.gschema.xml
 %{_datadir}/dbus-1/services/org.gnome.Calculator.SearchProvider.service
-#{_datadir}/gnome-shell/search-providers/%{name}-search-provider.ini
-#_datadir}/appdata/%{name}.appdata.xml
+%{_datadir}/gnome-shell/search-providers/org.gnome.Calculator-search-provider.ini
+%_datadir}/metainfo/org.gnome.Calculator.appdata.xml
+%{_datadir}/icons/hicolor/*
 #{_libdir}/%{name}
 %doc %{_mandir}/man1/%{name}.1.*
 %doc %{_mandir}/man1/gcalccmd.1*
