@@ -11,7 +11,7 @@ URL:		https://wiki.gnome.org/Calculator
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(gtksourceview-3.0)
+BuildRequires:	pkgconfig(gtksourceview-4)
 BuildRequires:	pkgconfig(libsoup-2.4)
 BuildRequires:	desktop-file-utils
 BuildRequires:	gettext
