@@ -2,8 +2,8 @@
 %define _disable_rebuild_configure 1
 
 Name:		gnome-calculator
-Version:	3.30.1
-Release:	2
+Version:	3.32.1
+Release:	1
 Summary:	GNOME Desktop calculator
 Group:		Graphical desktop/GNOME
 License:	GPLv2+
